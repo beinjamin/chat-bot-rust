@@ -14,6 +14,7 @@ pub fn App() -> impl IntoView {
 
         // sets the document title
         <Title text="Chat Bot"/>
+        
 
     }
 }
