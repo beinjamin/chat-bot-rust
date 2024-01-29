@@ -22,14 +22,8 @@ llm = { git = "https://github.com/rustformers/llm.git", branch = "main", optiona
 [features]
 csr = ["leptos/csr", "leptos_meta/csr", "leptos_router/csr"]
 hydrate = ["leptos/hydrate", "leptos_meta/hydrate", "leptos_router/hydrate"]
-ssr = [
-  "dep:actix-files",
-  "dep:actix-web",
-  "dep:leptos_actix",
-  "leptos/ssr",
-  "leptos_meta/ssr",
-  "leptos_router/ssr",
-]
+ssr = ["dep:actix-files", "dep:actix-web", "dep:leptos_actix", "leptos/ssr", "leptos_meta/ssr", "leptos_router/ssr", "dep:rand", "dep:dotenv", "dep:llm", "dep:actix-ws", "dep:actix-rt", "dep:futures", "tokio/sync"]
+
 
 # Defines a size-optimized profile for the WASM bundle in release mode
 [profile.wasm-release]
